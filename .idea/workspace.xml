@@ -7,9 +7,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,6 +130,11 @@
       <path value="$PROJECT_DIR$/vendor/pragmarx/ia-collection" />
       <path value="$PROJECT_DIR$/vendor/pragmarx/coollection" />
       <path value="$PROJECT_DIR$/vendor/pragmarx/countries" />
+      <path value="$PROJECT_DIR$/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/vendor/darkaonline/l5-swagger" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jcEfWmc0GZ0dUGm2agyk5mZfy0" />
@@ -148,18 +156,19 @@
     <property name="TYPO3XliffPathToExtensionLanguageFiles" value="Resources/Private/Language/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/data/countries" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\data\aaxc_api\database\seeders" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\data\aaxc_api\public\data\countries" />
       <recent name="C:\data\aaxc_api\public\data" />
       <recent name="C:\data\aaxc_api\app\Models" />
       <recent name="C:\data\aaxc_api\app\Http\Controllers" />
       <recent name="C:\data\aaxc_api\app\Http\Middleware" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\data\aaxc_api\database\seeders" />
     </key>
   </component>
   <component name="RunManager">
@@ -176,7 +185,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604095091396</updated>
-      <workItem from="1604095092434" duration="23430000" />
+      <workItem from="1604095092434" duration="27272000" />
+      <workItem from="1604168740840" duration="2242000" />
     </task>
     <servers />
   </component>
@@ -184,10 +194,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Deployment" timestamp="1604155003715">
+    <state x="552" y="178" key="#Deployment" timestamp="1604165557082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604155003715" />
+    <state x="552" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604165557082" />
     <state x="637" y="201" key="#Options" timestamp="1604145578865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -200,10 +210,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604158067558" />
-    <state x="99" y="109" width="1736" height="856" key="DirDiffDialog" timestamp="1604161504432">
+    <state x="718" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604168004486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="99" y="109" width="1736" height="856" key="DirDiffDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604161504432" />
+    <state x="718" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604168004486" />
+    <state x="81" y="54" width="1736" height="856" key="DirDiffDialog" timestamp="1604172262074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="81" y="54" width="1736" height="856" key="DirDiffDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604172262074" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604154890700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,13 +226,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604150101806" />
-    <state x="635" y="209" width="650" height="622" key="find.popup" timestamp="1604157027837">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604169710257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="635" y="209" width="650" height="622" key="find.popup/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604157027837" />
-    <state x="813" y="250" key="ftp.server.browser" timestamp="1604155002550">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604169710257" />
+    <state x="635" y="209" width="650" height="622" key="find.popup" timestamp="1604169240496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="813" y="250" key="ftp.server.browser/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604155002550" />
+    <state x="635" y="209" width="650" height="622" key="find.popup/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604169240496" />
+    <state x="813" y="250" key="ftp.server.browser" timestamp="1604165556065">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="813" y="250" key="ftp.server.browser/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604165556065" />
   </component>
 </project>

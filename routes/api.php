@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 // Countries
 Route::prefix('countries')->group(function () {
     Route::get('/', 'CountryController@index');

@@ -1,0 +1,205 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Aaxc API",
+        "version": "1.0.1"
+    },
+    "servers": [
+        {
+            "url": "https://api.aaxc.lv/",
+            "description": "API end-point for basic data requests"
+        },
+        {
+            "url": "https://api.aaxc.lv"
+        }
+    ],
+    "paths": {
+        "/v1/cities": {
+            "get": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "Get list of cities",
+                "description": "Returns list of cities",
+                "operationId": "getCitiesList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/cities/{id}": {
+            "get": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "Get single city",
+                "description": "Returns single city",
+                "operationId": "getCityById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/countries": {
+            "get": {
+                "tags": [
+                    "Country"
+                ],
+                "summary": "Get list of countries",
+                "description": "Returns list of countries",
+                "operationId": "getCountriesList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/countries/{id}": {
+            "get": {
+                "tags": [
+                    "Country"
+                ],
+                "summary": "Get single country",
+                "description": "Returns single country",
+                "operationId": "getCountryById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/counties": {
+            "get": {
+                "tags": [
+                    "County"
+                ],
+                "summary": "Get list of counties",
+                "description": "Returns list of counties",
+                "operationId": "getCountiesList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/counties/{id}": {
+            "get": {
+                "tags": [
+                    "County"
+                ],
+                "summary": "Get single county",
+                "description": "Returns single county",
+                "operationId": "getCountyById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/regions": {
+            "get": {
+                "tags": [
+                    "Region"
+                ],
+                "summary": "Get list of region",
+                "description": "Returns list of regions",
+                "operationId": "getRegionsList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/regions/{id}": {
+            "get": {
+                "tags": [
+                    "Region"
+                ],
+                "summary": "Get singel region",
+                "description": "Returns single regions",
+                "operationId": "getRegionById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

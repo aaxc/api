@@ -15,7 +15,22 @@ use App\Models\CountriesList;
 class CountryController extends Controller
 {
     /**
-     * Return region list
+     * Return country list
+     *
+     * @OA\Get(
+     *   path="/v1/countries",
+     *   operationId="getCountriesList",
+     *   tags={"Country"},
+     *   summary="Get list of countries",
+     *   description="Returns list of countries",
+     *   @OA\Response(
+     *     response=200,
+     *     description="Successful operation",
+     *     @OA\MediaType(
+     *       mediaType="application/json",
+     *     ),
+     *   ),
+     * )
      *
      * @return \App\Models\Region[]|\Illuminate\Database\Eloquent\Collection
      */
@@ -26,9 +41,34 @@ class CountryController extends Controller
     }
 
     /**
-     * Return single region info
+     * Return single country info
      *
-     * @param $id
+     * @OA\Get(
+     *   path="/v1/countries/{id}",
+     *   operationId="getCountryById",
+     *   tags={"Country"},
+     *   summary="Get single country",
+     *   description="Returns single country",
+     *
+     *   @OA\Parameter(
+     *     name="id",
+     *     in="path",
+     *     required=true,
+     *     @OA\Schema(
+     *       type="string"
+     *     )
+     *   ),
+     *
+     *   @OA\Response(
+     *     response=200,
+     *     description="Successful operation",
+     *     @OA\MediaType(
+     *       mediaType="application/json",
+     *     ),
+     *   ),
+     * )
+     *
+     * @param string $code
      *
      * @return mixed
      */

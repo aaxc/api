@@ -12,6 +12,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/vendor" />
             <excludedPath path="/storage" />
             <excludedPath local="true" path="$PROJECT_DIR$/storage" />
+            <excludedPath path="/public/error_log" />
           </excludedPaths>
         </serverdata>
       </paths>
