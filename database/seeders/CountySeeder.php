@@ -15,7 +15,7 @@ class CountySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('counties')->delete();
+        DB::table('counties')->truncate();
 
         DB::table('counties')->insert(
             [

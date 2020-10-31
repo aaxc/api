@@ -15,7 +15,7 @@ class CitySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('cities')->delete();
+        DB::table('cities')->truncate();
 
         DB::table('cities')->insert(
             [

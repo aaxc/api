@@ -23,7 +23,7 @@ class RegionSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('regions')->delete();
+        DB::table('regions')->truncate();
 
         DB::table('regions')->insert(
             [
