@@ -44,14 +44,14 @@ class CountryController extends Controller
      * Return single country info
      *
      * @OA\Get(
-     *   path="/v1/countries/{id}",
-     *   operationId="getCountryById",
+     *   path="/v1/countries/{code}",
+     *   operationId="getCountryByCode",
      *   tags={"Country"},
      *   summary="Get single country",
      *   description="Returns single country",
      *
      *   @OA\Parameter(
-     *     name="id",
+     *     name="code",
      *     in="path",
      *     required=true,
      *     @OA\Schema(

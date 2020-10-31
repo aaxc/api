@@ -78,7 +78,7 @@
                 }
             }
         },
-        "/v1/countries/{id}": {
+        "/v1/countries/{code}": {
             "get": {
                 "tags": [
                     "Country"
@@ -88,7 +88,7 @@
                 "operationId": "getCountryById",
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "code",
                         "in": "path",
                         "required": true,
                         "schema": {
